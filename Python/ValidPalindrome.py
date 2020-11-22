@@ -2,7 +2,7 @@ import re
 
 
 class ValidPalindrome:
-    def isPalindrome(self, s):
+    def isPalindrome(self, s: str) -> bool:
         # Base condition
         if s == None or len(s) == 0:
             return True
