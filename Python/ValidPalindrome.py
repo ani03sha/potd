@@ -1,10 +1,13 @@
+import re
+
+
 class ValidPalindrome:
     def isPalindrome(self, s):
         # Base condition
-        if s == None and len(s) == 0:
+        if s == None or len(s) == 0:
             return False
         # Remove all special characters and whitespace
-        s = s.replace("[^a-zA-Z]", "")
+        s = ''.join(e for e in s if e.isalnum())
         # Convert all the characters in the string to one case only
         s = s.lower()
         # Two pointers
@@ -12,7 +15,7 @@ class ValidPalindrome:
         right = len(s) - 1
         # Loop until the two pointers meet
         while left <= right:
-            if s[left] is not s[right]:
+            if s[left] != s[right]:
                 return False
             left += 1
             right -= 1

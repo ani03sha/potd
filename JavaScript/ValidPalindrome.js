@@ -6,7 +6,7 @@ class ValidPalindrome {
             return false;
         }
         // Remove all special characters and whitespace
-        s = s.replace("[^a-zA-Z]/g", "");
+        s = s.replace(/[^a-zA-Z]/g, "");
         // Convert all the characters in the string to one case only
         s = s.toLowerCase();
         // Two pointers
