@@ -3,10 +3,10 @@ public class ValidPalindrome {
     private static boolean isValid(String s) {
         // Base condition
         if (s == null || s.isEmpty()) {
-            return false;
+            return true;
         }
         // Remove all special characters and whitespace
-        s = s.replaceAll("[^a-zA-Z]", "");
+        s = s.replaceAll("[^a-zA-Z0-9]", "");
         // Convert all the characters in the string to one case only
         s = s.toLowerCase();
         // Two pointers

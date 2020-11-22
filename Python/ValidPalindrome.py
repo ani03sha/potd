@@ -5,7 +5,7 @@ class ValidPalindrome:
     def isPalindrome(self, s):
         # Base condition
         if s == None or len(s) == 0:
-            return False
+            return True
         # Remove all special characters and whitespace
         s = ''.join(e for e in s if e.isalnum())
         # Convert all the characters in the string to one case only
