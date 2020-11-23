@@ -3,10 +3,10 @@ class ValidPalindrome {
     isValid(s) {
         // Base condition
         if (s == undefined || s.length == 0) {
-            return true;
+            return false;
         }
         // Remove all special characters and whitespace
-        s = s.replace(/[^a-zA-Z0-9]/g, "");
+        s = s.replace("[^a-zA-Z]/g", "");
         // Convert all the characters in the string to one case only
         s = s.toLowerCase();
         // Two pointers
@@ -28,4 +28,3 @@ let validPalindrome = new ValidPalindrome();
 console.log(validPalindrome.isValid("level"));
 console.log(validPalindrome.isValid("algorithms"));
 console.log(validPalindrome.isValid("A man, a plan, a canal: Panama"));
-console.log(validPalindrome.isValid("0P"));
