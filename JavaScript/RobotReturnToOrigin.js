@@ -16,7 +16,7 @@
 var judgeCircle = function (moves) {
     // Base condition
     if (moves == undefined || moves.length == 0) {
-        return false;
+        return true;
     }
     // Coordinates
     let x = 0;
