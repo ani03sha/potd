@@ -25,21 +25,16 @@ public class RobotReturnToOrigin {
         int y = 0;
         // Loop through the entire string
         for(char c : moves.toCharArray()) {
-            switch (c) {
-                case 'L':
-                    x -= 1;
-                    break;
-                case 'R':
-                    x += 1;
-                    break;
-                case 'D':
-                    y -= 1;
-                    break;
-                case 'U':
-                    y += 1;
-                    break;
-                default:
-                    return false;
+            if (c == 'L') {
+                x--;
+            } else if (c == 'R') {
+                x++;
+            } else if (c == 'D') {
+                y--;
+            } else if (c == 'U') {
+                y++;
+            } else {
+                return false;
             }
         }
         return x == 0 && y == 0;
