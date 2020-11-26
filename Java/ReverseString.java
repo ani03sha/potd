@@ -1,3 +1,7 @@
+/**
+ * Given a string, reverse all of its characters and return the resulting
+ * string.
+ */
 public class ReverseString {
 
     private static String reverse(String s) {

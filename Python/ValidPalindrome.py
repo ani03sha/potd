@@ -1,3 +1,7 @@
+"""
+Given a string, return whether or not it forms a palindrome ignoring case and non-alphabetical characters.
+Note: a palindrome is a sequence of characters that reads the same forwards and backwards.
+"""
 import re
 
 

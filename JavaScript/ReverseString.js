@@ -1,3 +1,6 @@
+/**
+ * Given a string, reverse all of its characters and return the resulting string.
+ */
 var reverse = (s) => {
     const characters = s.split("");
     // Left and right pointers

@@ -1,3 +1,6 @@
+"""
+Given a string, reverse all of its characters and return the resulting string.
+"""
 from typing import List
 
 
