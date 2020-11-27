@@ -27,7 +27,10 @@ public class DetectCapitalization {
             // 1. If only the first letter is capital, or
             // 2. All the letters in the string are capital
             return count == 1 || count == word.length();
-        } else {
+        } 
+        // If the first letter is not capital then there shouldn't be any capital
+        // letter in the word
+        else {
             for (int i = 1; i < word.length(); i++) {
                 if (isCapital(word.charAt(i))) {
                     return false;
