@@ -1,4 +1,6 @@
 """
+Given an array of integers, return the indices of numbers which sum to a given
+target, k. Note: you may not sum a number with itself.
 """
 from typing import List
 
