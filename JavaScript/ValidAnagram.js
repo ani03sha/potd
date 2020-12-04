@@ -1,3 +1,7 @@
+/**
+ * Given two strings s and t return whether or not s is an anagram of t. Note:
+ * An anagram is a word formed by reordering the letters of another word.
+ */
 const isAnagram = (s, t) => {
     // Base condition
     if (s.length !== t.length) {
