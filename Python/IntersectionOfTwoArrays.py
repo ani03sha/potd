@@ -8,9 +8,9 @@ class IntersectionOfTwoArrays:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         # Set for storing elements of first array
         set1 = set(nums1)
-        # This set will store only common elements
+        # This set will store the elements of second array
         set2 = set(nums2)
-        # Loop through the elements of the second array
+        # Take only common elements
         return list(set1 & set2)
 
 
