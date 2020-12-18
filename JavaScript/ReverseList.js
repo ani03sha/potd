@@ -1,3 +1,7 @@
+/**
+ * Given a linked list, containing unique values, reverse it, and return the
+ * result.
+ */
 const reverseList = (head) => {
     // Base condition
     if (head === null || head.next === null) {
